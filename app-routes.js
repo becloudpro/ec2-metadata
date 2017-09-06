@@ -25,7 +25,7 @@ function setupRoutes(app) {
       .catch(next);
   });
 
-  app.post('/local-ip', (req, res, next) => {
+  app.get('/local-ip', (req, res, next) => {
     axios.get(`${metadataUrl}/local-ip`)
       .then(response => {
         const ip = response.data;
