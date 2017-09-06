@@ -1,0 +1,14 @@
+{
+  "name": "ec2-metadata",
+  "version": "1.0.0",
+  "description": "Working with EC2 metadata",
+  "author": "BeCloudPro",
+  "scripts": {
+    "start": "pm2 start app.js --name=\"ec2-metadata\""
+  },
+  "dependencies": {
+    "aws-sdk": "^2.108.0",
+    "axios": "^0.16.2",
+    "express": "^4.15.4"
+  }
+}
